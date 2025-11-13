@@ -187,13 +187,24 @@ body {
     background-color: #000000 !important;
 }
 
-/* Responsividade */
+/* ========= AJUSTES PARA O HEADER / MOBILE ========= */
+
+/* 1) MENU MOBILE COM FUNDO ESCURO (não deixar o texto do slide aparecer por trás) */
+@media (max-width: 991.98px) {
+    #navbarMain {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1rem;
+    }
+}
+
+/* 2) TIRAR O ESPAÇO EM CIMA DO HERO NO MOBILE (faixa clara atrás da logo) */
 @media (max-width: 767.98px) {
     .topbar {
         text-align: center;
     }
     .hero {
         min-height: 70vh;
-        padding-block: 4rem;
+        /* antes tinha padding-block: 4rem; isso empurrava a imagem pra baixo */
+        padding-block: 0;
     }
 }
