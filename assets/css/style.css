@@ -1,0 +1,199 @@
+/* Estilos gerais */
+:root {
+    --cor-principal: #bb8c4b;
+    --cor-principal-escura: #745024;
+    --cor-fundo-escuro: #111111;
+    --cor-texto: #333333;
+    --cor-cinza-claro: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: var(--cor-texto);
+    background-color: #ffffff;
+}
+
+/* Topbar */
+.topbar {
+    background: linear-gradient(90deg, #000000, #3b3b3b);
+}
+
+/* Navbar / logo */
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Hero principal */
+.hero {
+    position: relative;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.45);
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(187,140,75,0.55), rgba(0,0,0,0.85));
+    z-index: -1;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 3vw + 1rem, 3.4rem);
+}
+
+.hero-subtitle {
+    letter-spacing: 0.15em;
+    opacity: 0.85;
+}
+
+.hero-text {
+    max-width: 620px;
+    margin-inline: auto;
+}
+
+.text-highlight {
+    color: var(--cor-principal);
+}
+
+/* Seções genéricas */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    max-width: 640px;
+    margin: 0 auto;
+    color: #666666;
+}
+
+.section-divider {
+    width: 80px;
+    height: 3px;
+    background: var(--cor-principal);
+    border-radius: 999px;
+    margin-top: 1rem;
+}
+
+/* Cards de serviço / preço */
+.service-icon img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pricing-card .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.pricing-line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--cor-principal);
+}
+
+/* Seção de horário */
+.horario-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.horario-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -2;
+}
+
+.horario-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+/* Page headers (sobre, serviços, etc.) */
+.page-header {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+}
+
+.page-header-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -2;
+}
+
+.page-header-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+    z-index: -1;
+}
+
+/* Linhas de serviços (página Serviços) */
+.service-line .service-price {
+    font-weight: 600;
+    color: var(--cor-principal);
+}
+
+/* Galeria */
+.gallery-card img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.03);
+}
+
+/* Footer */
+.footer {
+    font-size: 0.9rem;
+}
+
+/* Utilitários */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.bg-black {
+    background-color: #000000 !important;
+}
+
+/* Responsividade */
+@media (max-width: 767.98px) {
+    .topbar {
+        text-align: center;
+    }
+    .hero {
+        min-height: 70vh;
+        padding-block: 4rem;
+    }
+}
