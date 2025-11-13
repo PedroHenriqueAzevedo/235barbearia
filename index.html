@@ -25,7 +25,7 @@
 
         <!-- LOGO -->
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="assets/img/logo.jpg" alt="235 Barbearia" class="me-2" style="height:45px; width:auto;">
+            <img src="assets/img/logo.png" alt="235 Barbearia" class="me-2" style="height:45px; width:auto;">
             <span class="fw-bold">235 Barbearia</span>
         </a>
 
@@ -96,46 +96,57 @@
 </nav>
 
 
-    <!-- HERO COM CARROSSEL AJUSTADO (ALTURA 42%) -->
     <header class="hero position-relative">
 
-        <div class="ratio" style="--bs-aspect-ratio: 42%;">
-            <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+    <div class="ratio" style="--bs-aspect-ratio: 42%;">
+        <div id="carouselHero" 
+             class="carousel slide"
+             data-bs-ride="carousel"
+             data-bs-touch="true"
+             data-bs-interval="5000">
 
-                    <div class="carousel-item active">
-                        <img src="assets/img/1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
-                    </div>
+            <div class="carousel-inner">
 
-                    <div class="carousel-item">
-                        <img src="assets/img/2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="assets/img/3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="assets/img/4.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="assets/img/5.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
-                    </div>
-
+                <div class="carousel-item active">
+                    <img src="assets/img/1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
                 </div>
 
-<button class="carousel-control-prev top-100 top-md-50" type="button" 
+                <div class="carousel-item">
+                    <img src="assets/img/2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/4.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/5.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev top-75 top-md-70 translate-middle-y" 
+        type="button"
         data-bs-target="#carouselHero" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
 </button>
 
-<button class="carousel-control-next top-100 top-md-50" type="button" 
+<button class="carousel-control-next top-75 top-md-70 translate-middle-y" 
+        type="button"
         data-bs-target="#carouselHero" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
 </button>
-            </div>
+
+
         </div>
+    </div>
+
+</header>
+
 
         <!-- TEXTO SOBREPOSTO -->
         <div class="hero-overlay"></div>
@@ -306,7 +317,7 @@
             <!-- Cliente 2 -->
             <div class="col-md-4">
                 <div class="bg-white shadow-sm p-4 rounded h-100">
-                    <img src="assets/img/clientes/2.png" 
+                    <img src="assets/img/clientes/2.jpg" 
                          class="rounded-circle mb-3" 
                          alt="Cliente 2"
                          style="width: 95px; height: 95px; object-fit: cover;">
