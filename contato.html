@@ -15,155 +15,189 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Topbar + Navbar -->
-    <div class="topbar py-2 text-white">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
-            <div class="mb-2 mb-md-0">
-                <i class="fa-regular fa-clock me-2"></i>
-                Domingo: Fechado | Seg - Sex: 08:00 às 20:00 | Sáb: 08:00 às 18:00
+
+<!-- HEADER PADRÃO -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 end-0 z-3">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/img/logo.jpg" alt="235 Barbearia" class="me-2" style="height:45px; width:auto;">
+            <span class="fw-bold">235 Barbearia</span>
+        </a>
+
+        <button class="navbar-toggler bg-dark bg-opacity-75" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+
+            <ul class="navbar-nav me-auto ms-lg-4 mt-3 mt-lg-0 mb-3 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+            </ul>
+
+            <!-- Informações desktop -->
+            <div class="d-none d-lg-flex flex-column text-white small">
+
+                <div class="d-flex gap-3">
+                    <span><i class="fa-regular fa-clock me-1"></i> Seg–Sex: 08h–20h | Sáb: 08h–18h | Dom: Fechado</span>
+                    <span><i class="fa-solid fa-phone me-1"></i> (62) 4102-4694</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 mt-2">
+                    <a href="https://facebook.com/235.barbearia" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/235.barbearia" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="https://wa.me/556241024694?text=Ol%C3%A1%21+Vim+pelo+site+da+235+Barbearia+e+gostaria+de+tirar+uma+d%C3%BAvida+ou+falar+com+algu%C3%A9m+da+equipe.+Pode+me+ajudar%3F"
+                       class="btn btn-success btn-sm">
+                        <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                    </a>
+                </div>
             </div>
-            <div class="d-flex align-items-center gap-3">
-                <span><i class="fa-solid fa-phone me-1"></i>(62) 4102-4694</span>
-                <a href="https://www.facebook.com/235.barbearia" class="text-white me-2" target="_blank">
+
+            <!-- Mobile -->
+            <div class="d-lg-none bg-dark bg-opacity-75 text-white p-3 rounded">
+
+                <p class="mb-1"><i class="fa-regular fa-clock me-1"></i> Seg–Sex: 08h–20h</p>
+                <p class="mb-1">Sáb: 08h–18h</p>
+                <p class="mb-1">Domingo: Fechado</p>
+
+                <p class="mt-3 mb-2"><i class="fa-solid fa-phone me-1"></i> (62) 4102-4694</p>
+
+                <div class="d-flex gap-3 mb-3">
+                    <a href="https://facebook.com/235.barbearia" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/235.barbearia" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <a href="https://wa.me/556241024694?text=Ol%C3%A1%21+Vim+pelo+site+da+235+Barbearia+e+gostaria+de+tirar+uma+d%C3%BAvida+ou+falar+com+algu%C3%A9m+da+equipe.+Pode+me+ajudar%3F"
+                   class="btn btn-success w-100">
+                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER COM IMAGEM -->
+<header class="hero position-relative" style="min-height:auto;">
+
+    <div class="ratio d-none d-md-block" style="--bs-aspect-ratio: 40%;">
+        <img src="assets/img/5.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Contato 235 Barbearia">
+    </div>
+
+    <div class="ratio d-md-none" style="--bs-aspect-ratio: 75%;">
+        <img src="assets/img/5.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Contato 235 Barbearia">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="hero-title mb-2">Contato</h1>
+        <p class="hero-text mb-0">Fale com a 235 Barbearia, tire suas dúvidas ou envie sugestões.</p>
+    </div>
+
+</header>
+
+<main class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- Mensagem principal -->
+            <div class="col-lg-7">
+                <h2 class="section-title mb-3">Envie uma mensagem</h2>
+                <div class="section-divider mb-4"></div>
+
+                <p class="small text-muted mb-4">
+                    Aqui você fala diretamente com nossa equipe.  
+                    Estamos prontos para ajudar, tirar dúvidas, receber sugestões  
+                    ou orientar sobre nossos serviços.  
+                    É só clicar no botão abaixo e enviar sua mensagem pelo WhatsApp.
+                </p>
+
+                <a href="https://wa.me/556241024694?text=Ol%C3%A1%21+Vim+pelo+site+da+235+Barbearia+e+gostaria+de+tirar+uma+d%C3%BAvida+ou+falar+com+algu%C3%A9m+da+equipe.+Pode+me+ajudar%3F"
+                   target="_blank" class="btn btn-success btn-lg">
+                    <i class="fa-brands fa-whatsapp me-1"></i>
+                    Falar no WhatsApp
+                </a>
+            </div>
+
+            <!-- Informações + mapa -->
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="h5 mb-3">Informações da barbearia</h2>
+                        <p class="mb-2">
+                            <i class="fa-solid fa-location-dot me-2 text-primary"></i>
+                            Rua C 248, 212, Qd. 548 Lt. 1/4/5<br>
+                            Jardim América, Goiânia - GO<br>
+                            CEP: 74290-205
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa-solid fa-phone me-2 text-primary"></i>
+                            (62) 4102-4694
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa-brands fa-instagram me-2 text-primary"></i>
+                            <a href="https://www.instagram.com/235.barbearia" target="_blank" class="link-body-emphasis text-decoration-none">
+                                @235.barbearia
+                            </a>
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa-brands fa-facebook-f me-2 text-primary"></i>
+                            <a href="https://www.facebook.com/235.barbearia" target="_blank" class="link-body-emphasis text-decoration-none">
+                                facebook.com/235.barbearia
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mapa correto (igual ao index) -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5 mb-3">Como chegar</h2>
+                        <div class="ratio ratio-4x3 rounded overflow-hidden">
+                            <iframe 
+                                src="https://www.google.com/maps?q=R.+C-248,+212+-+Jardim+Am%C3%A9rica,+Goi%C3%A2nia+-+GO,+74290-205&output=embed"
+                                width="100%" height="100%" style="border:0;" loading="lazy">
+                            </iframe>
+                        </div>
+                        <a href="https://maps.google.com/maps?daddr=Rua+C-248,+212,+Jardim+Am%C3%A9rica,+Goi%C3%A2nia,+GO" 
+                           target="_blank" class="btn btn-outline-primary btn-sm mt-3">
+                            Ver rota no Google Maps
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<!-- Rodapé -->
+<footer class="footer py-4 bg-black text-white-50 mt-auto">
+    <div class="container">
+        <div class="row align-items-center gy-3">
+            <div class="col-md-8">
+                <small>&copy; 2025 235 Barbearia. Todos os direitos reservados.</small>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a href="https://www.facebook.com/235.barbearia" target="_blank" class="text-white-50 me-3">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="https://www.instagram.com/235.barbearia" class="text-white" target="_blank">
+                <a href="https://www.instagram.com/235.barbearia" target="_blank" class="text-white-50">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
         </div>
     </div>
+</footer>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/img/logo-235.png" alt="235 Barbearia" class="logo-img me-2">
-                <span class="fw-bold">235 Barbearia</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarMain">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicos.html">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contato.html">Contato</a>
-                    </li>
-                </ul>
-                <a href="https://www.trinks.com/235barbearia" target="_blank" class="btn btn-outline-light btn-sm">
-                    Agendar pelo Trinks
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Cabeçalho da página -->
-    <section class="page-header py-5 text-white text-center">
-        <div class="page-header-overlay"></div>
-        <img src="assets/img/contato-hero.jpg" class="page-header-bg" alt="Contato 235 Barbearia">
-        <div class="container position-relative">
-            <h1 class="display-5 fw-bold mb-2">Contato</h1>
-            <p class="lead mb-0">
-                Fale com a 235 Barbearia, tire suas dúvidas ou envie sugestões.
-            </p>
-        </div>
-    </section>
-
-    <main class="py-5 bg-light">
-        <div class="container">
-            <div class="row g-5">
-                <!-- Formulário -->
-                <div class="col-lg-7">
-                    <h2 class="section-title mb-3">Envie uma mensagem</h2>
-                    <div class="section-divider mb-4"></div>
-                    <p class="small text-muted mb-4">
-                        Este formulário é apenas um modelo. Para funcionar de verdade, você pode integrar com um serviço
-                        como FormSubmit, Formspree ou backend próprio. Basta ajustar o atributo <code>action</code>.
-                    </p>
-
-                    <a href='https://wa.me/556241024694' target='_blank' class='btn btn-success btn-lg'>Falar no WhatsApp</a>
-                </div>
-
-                <!-- Informações de contato -->
-                <div class="col-lg-5">
-                    <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-body">
-                            <h2 class="h5 mb-3">Informações da barbearia</h2>
-                            <p class="mb-2">
-                                <i class="fa-solid fa-location-dot me-2 text-primary"></i>
-                                Rua C 248, 212, Qd. 548 Lt. 1/4/5<br>
-                                Jardim América, Goiânia - GO<br>
-                                CEP: 74290-205
-                            </p>
-                            <p class="mb-2">
-                                <i class="fa-solid fa-phone me-2 text-primary"></i>
-                                (62) 4102-4694
-                            </p>
-                            <p class="mb-2">
-                                <i class="fa-brands fa-instagram me-2 text-primary"></i>
-                                <a href="https://www.instagram.com/235.barbearia" target="_blank" class="link-body-emphasis text-decoration-none">
-                                    @235.barbearia
-                                </a>
-                            </p>
-                            <p class="mb-0">
-                                <i class="fa-brands fa-facebook-f me-2 text-primary"></i>
-                                <a href="https://www.facebook.com/235.barbearia" target="_blank" class="link-body-emphasis text-decoration-none">
-                                    facebook.com/235.barbearia
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <h2 class="h5 mb-3">Como chegar</h2>
-                            <div class="ratio ratio-4x3 rounded overflow-hidden">
-                                <!-- Você pode trocar por um iframe do Google Maps, se quiser -->
-                                <img src="assets/img/mapa-235.jpg" alt="Mapa 235 Barbearia" class="w-100 h-100 object-fit-cover">
-                            </div>
-                            <a href="https://maps.google.com/maps?daddr=Rua+C+248,+212,+Jardim+Am%C3%A9rica,+Goi%C3%A2nia,+GO" 
-                               target="_blank" class="btn btn-outline-primary btn-sm mt-3">
-                                Ver rota no Google Maps
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Rodapé -->
-    <footer class="footer py-4 bg-black text-white-50 mt-auto">
-        <div class="container">
-            <div class="row align-items-center gy-3">
-                <div class="col-md-8">
-                    <small>&copy; 2025 235 Barbearia. Todos os direitos reservados.</small>
-                </div>
-                <div class="col-md-4 text-md-end">
-                    <a href="https://www.facebook.com/235.barbearia" target="_blank" class="text-white-50 me-3">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/235.barbearia" target="_blank" class="text-white-50">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
