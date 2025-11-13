@@ -15,242 +15,281 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Topbar + Navbar compartilhadas -->
-    <div class="topbar py-2 text-white">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
-            <div class="mb-2 mb-md-0">
-                <i class="fa-regular fa-clock me-2"></i>
-                Domingo: Fechado | Seg - Sex: 08:00 às 20:00 | Sáb: 08:00 às 18:00
+
+<!-- NAVBAR IGUAL AO INDEX -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 end-0 z-3">
+    <div class="container">
+
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/img/logo.jpg" alt="235 Barbearia" class="me-2" style="height:45px; width:auto;">
+            <span class="fw-bold">235 Barbearia</span>
+        </a>
+
+        <!-- BOTÃO MOBILE -->
+        <button class="navbar-toggler bg-dark bg-opacity-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+
+            <!-- MENU PRINCIPAL -->
+            <ul class="navbar-nav me-auto ms-lg-4 mt-3 mt-lg-0 mb-3 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+
+            <!-- BLOCO INFORMAÇÕES (DESKTOP) -->
+            <div class="d-none d-lg-flex flex-column text-white small">
+
+                <div class="d-flex gap-3">
+                    <span>
+                        <i class="fa-regular fa-clock me-1"></i>
+                        Seg–Sex: 08h–20h | Sáb: 08h–18h | Dom: Fechado
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-phone me-1"></i> (62) 4102-4694
+                    </span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 mt-2">
+                    <a href="https://facebook.com/235.barbearia" class="text-white">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/235.barbearia" class="text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/556241024694?text=Ol%C3%A1!+Gostaria+de+falar+com+a+235+Barbearia."
+                       class="btn btn-success btn-sm">
+                        <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                    </a>
+                </div>
             </div>
-            <div class="d-flex align-items-center gap-3">
-                <span><i class="fa-solid fa-phone me-1"></i>(62) 4102-4694</span>
-                <a href="https://www.facebook.com/235.barbearia" class="text-white me-2" target="_blank">
+
+            <!-- BLOCO MOBILE -->
+            <div class="d-lg-none bg-dark bg-opacity-75 text-white p-3 rounded">
+
+                <p class="mb-1"><i class="fa-regular fa-clock me-1"></i> Seg–Sex: 08h–20h</p>
+                <p class="mb-1">Sáb: 08h–18h</p>
+                <p class="mb-1">Domingo: Fechado</p>
+
+                <p class="mt-3 mb-2"><i class="fa-solid fa-phone me-1"></i> (62) 4102-4694</p>
+
+                <div class="d-flex gap-3 mb-3">
+                    <a href="https://facebook.com/235.barbearia" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/235.barbearia" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <a href="https://wa.me/556241024694?text=Ol%C3%A1!+Gostaria+de+falar+com+a+235+Barbearia."
+                   class="btn btn-success w-100">
+                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<header class="hero position-relative" style="min-height:auto;">
+
+    <!-- DESKTOP (md+) -->
+    <div class="ratio d-none d-md-block" style="--bs-aspect-ratio: 40%;">
+        <img src="assets/img/1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Sobre a 235 Barbearia">
+    </div>
+
+    <!-- MOBILE (até md) -->
+    <div class="ratio d-md-none" style="--bs-aspect-ratio: 75%;">
+        <img src="assets/img/1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Sobre a 235 Barbearia">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="hero-title mb-3">Sobre a 235 Barbearia</h1>
+        <p class="hero-text mb-0">
+            Profissionalismo, competência e um ambiente pensado para você se sentir em casa.
+        </p>
+    </div>
+
+</header>
+
+
+
+<!-- Conteúdo principal -->
+<main class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-7">
+                <h2 class="section-title mb-3">Nossa história</h2>
+                <div class="section-divider mb-4"></div>
+                <p>
+                    Somos a primeira barbearia no Brasil a ser exclusiva de produtos de altíssima qualidade by 
+                    <strong>PAUL MITCHELL</strong>. Nosso compromisso é oferecer uma experiência completa, indo muito além
+                    de um simples corte de cabelo.
+                </p>
+                <p>
+                    Nosso lema é <strong>profissionalismo e competência</strong>. Acreditamos no vínculo especial e na amizade
+                    entre barbeiro e cliente, por isso queremos que você fique à vontade e faça da nossa barbearia um
+                    verdadeiro ponto de encontro de amigos e negócios.
+                </p>
+                <p>
+                    Aqui você será sempre bem recebido. Enquanto cuida do visual, pode relaxar, conversar e aproveitar
+                    um ambiente moderno, confortável e acolhedor.
+                </p>
+                <p class="mb-0">
+                    <strong>Sinta-se em casa, o café é por nossa conta.</strong>
+                </p>
+            </div>
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm mb-4">
+                    <!-- Substitua a imagem -->
+                    <img src="assets/img/13.jpg" class="card-img-top" alt="Equipe 235 Barbearia">
+                    <div class="card-body">
+                        <h5 class="card-title">Equipe especializada</h5>
+                        <p class="card-text">
+                            Nossa equipe é formada por profissionais experientes e apaixonados pelo que fazem, sempre
+                            em busca de atualização e técnicas modernas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Diferenciais</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="fa-solid fa-check text-primary me-2"></i>
+                                Produtos profissionais de alta performance
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa-solid fa-check text-primary me-2"></i>
+                                Ambiente moderno e confortável
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa-solid fa-check text-primary me-2"></i>
+                                Atendimento personalizado e pontual
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa-solid fa-check text-primary me-2"></i>
+                                Agendamento online pelo Trinks
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check text-primary me-2"></i>
+                                Espaço para adultos e crianças
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Formas de pagamento, idiomas, facilidades -->
+        <div class="row g-4 mt-5">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            <i class="fa-solid fa-credit-card me-2 text-primary"></i>
+                            Formas de pagamento
+                        </h5>
+                        <p class="small text-muted mb-2">Aceitamos diversas opções para facilitar seu atendimento:</p>
+                        <ul class="list-unstyled small mb-0">
+                            <li>Visa, Mastercard, Diners, American Express, Aura</li>
+                            <li>Elo Crédito, Banescard</li>
+                            <li>Maestro/Redeshop, Visa Electron, Elo Débito</li>
+                            <li>Doc/TED, transferência entre contas</li>
+                            <li>Dinheiro, Vale-presente, PIX</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            <i class="fa-solid fa-language me-2 text-primary"></i>
+                            Idiomas
+                        </h5>
+                        <p class="small text-muted mb-2">
+                            Atendimento em diferentes idiomas para receber bem clientes de vários lugares:
+                        </p>
+                        <ul class="list-unstyled small mb-0">
+                            <li>Português</li>
+                            <li>Espanhol</li>
+                            <li>Inglês</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            <i class="fa-solid fa-star me-2 text-primary"></i>
+                            Facilidades
+                        </h5>
+                        <p class="small text-muted mb-2">
+                            Tudo pensado para que sua experiência seja a melhor possível:
+                        </p>
+                        <ul class="list-unstyled small mb-0">
+                            <li>Bar e lanchonete</li>
+                            <li>Wi-Fi</li>
+                            <li>Estacionamento grátis</li>
+                            <li>Acesso para deficientes</li>
+                            <li>TV e ambiente climatizado</li>
+                            <li>Atendimento para adultos e crianças</li>
+                            <li>Aceitamos cartão de crédito e débito</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Política de cancelamento -->
+        <div class="row mt-5">
+            <div class="col-lg-8">
+                <h2 class="section-title mb-3">Política de cancelamento</h2>
+                <div class="section-divider mb-4"></div>
+                <p>
+                    Imprevistos acontecem, nós entendemos. Mas, por gentileza, pedimos que avise com antecedência
+                    sempre que precisar cancelar ou reagendar o seu horário.
+                </p>
+                <p class="mb-0">
+                    Assim, conseguimos organizar nossa agenda e disponibilizar o horário para outros clientes que
+                    também desejam ser atendidos.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- Rodapé -->
+<footer class="footer py-4 bg-black text-white-50 mt-auto">
+    <div class="container">
+        <div class="row align-items-center gy-3">
+            <div class="col-md-8">
+                <small>&copy; 2025 235 Barbearia. Todos os direitos reservados.</small>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a href="https://www.facebook.com/235.barbearia" target="_blank" class="text-white-50 me-3">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="https://www.instagram.com/235.barbearia" class="text-white" target="_blank">
+                <a href="https://www.instagram.com/235.barbearia" target="_blank" class="text-white-50">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
         </div>
     </div>
+</footer>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/img/logo-235.png" alt="235 Barbearia" class="logo-img me-2">
-                <span class="fw-bold">235 Barbearia</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarMain">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicos.html">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
-                </ul>
-                <a href="https://www.trinks.com/235barbearia" target="_blank" class="btn btn-outline-light btn-sm">
-                    Agendar pelo Trinks
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Cabeçalho da página -->
-    <section class="page-header py-5 text-white text-center">
-        <div class="page-header-overlay"></div>
-        <img src="assets/img/sobre-hero.jpg" class="page-header-bg" alt="Sobre a 235 Barbearia">
-        <div class="container position-relative">
-            <h1 class="display-5 fw-bold mb-2">Sobre a 235 Barbearia</h1>
-            <p class="lead mb-0">
-                Profissionalismo, competência e um ambiente pensado para você se sentir em casa.
-            </p>
-        </div>
-    </section>
-
-    <!-- Conteúdo principal -->
-    <main class="py-5 bg-light">
-        <div class="container">
-            <div class="row g-5 align-items-start">
-                <div class="col-lg-7">
-                    <h2 class="section-title mb-3">Nossa história</h2>
-                    <div class="section-divider mb-4"></div>
-                    <p>
-                        Somos a primeira barbearia no Brasil a ser exclusiva de produtos de altíssima qualidade by 
-                        <strong>PAUL MITCHELL</strong>. Nosso compromisso é oferecer uma experiência completa, indo muito além
-                        de um simples corte de cabelo.
-                    </p>
-                    <p>
-                        Nosso lema é <strong>profissionalismo e competência</strong>. Acreditamos no vínculo especial e na amizade
-                        entre barbeiro e cliente, por isso queremos que você fique à vontade e faça da nossa barbearia um
-                        verdadeiro ponto de encontro de amigos e negócios.
-                    </p>
-                    <p>
-                        Aqui você será sempre bem recebido. Enquanto cuida do visual, pode relaxar, conversar e aproveitar
-                        um ambiente moderno, confortável e acolhedor.
-                    </p>
-                    <p class="mb-0">
-                        <strong>Sinta-se em casa, o café é por nossa conta.</strong>
-                    </p>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card border-0 shadow-sm mb-4">
-                        <!-- Substitua a imagem -->
-                        <img src="assets/img/13.jpg" class="card-img-top" alt="Equipe 235 Barbearia">
-                        <div class="card-body">
-                            <h5 class="card-title">Equipe especializada</h5>
-                            <p class="card-text">
-                                Nossa equipe é formada por profissionais experientes e apaixonados pelo que fazem, sempre
-                                em busca de atualização e técnicas modernas.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">Diferenciais</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-2">
-                                    <i class="fa-solid fa-check text-primary me-2"></i>
-                                    Produtos profissionais de alta performance
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fa-solid fa-check text-primary me-2"></i>
-                                    Ambiente moderno e confortável
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fa-solid fa-check text-primary me-2"></i>
-                                    Atendimento personalizado e pontual
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fa-solid fa-check text-primary me-2"></i>
-                                    Agendamento online pelo Trinks
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check text-primary me-2"></i>
-                                    Espaço para adultos e crianças
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Formas de pagamento, idiomas, facilidades -->
-            <div class="row g-4 mt-5">
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">
-                                <i class="fa-solid fa-credit-card me-2 text-primary"></i>
-                                Formas de pagamento
-                            </h5>
-                            <p class="small text-muted mb-2">Aceitamos diversas opções para facilitar seu atendimento:</p>
-                            <ul class="list-unstyled small mb-0">
-                                <li>Visa, Mastercard, Diners, American Express, Aura</li>
-                                <li>Elo Crédito, Banescard</li>
-                                <li>Maestro/Redeshop, Visa Electron, Elo Débito</li>
-                                <li>Doc/TED, transferência entre contas</li>
-                                <li>Dinheiro, Vale-presente, PIX</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">
-                                <i class="fa-solid fa-language me-2 text-primary"></i>
-                                Idiomas
-                            </h5>
-                            <p class="small text-muted mb-2">
-                                Atendimento em diferentes idiomas para receber bem clientes de vários lugares:
-                            </p>
-                            <ul class="list-unstyled small mb-0">
-                                <li>Português</li>
-                                <li>Espanhol</li>
-                                <li>Inglês</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">
-                                <i class="fa-solid fa-star me-2 text-primary"></i>
-                                Facilidades
-                            </h5>
-                            <p class="small text-muted mb-2">
-                                Tudo pensado para que sua experiência seja a melhor possível:
-                            </p>
-                            <ul class="list-unstyled small mb-0">
-                                <li>Bar e lanchonete</li>
-                                <li>Wi‑Fi</li>
-                                <li>Estacionamento grátis</li>
-                                <li>Acesso para deficientes</li>
-                                <li>TV e ambiente climatizado</li>
-                                <li>Atendimento para adultos e crianças</li>
-                                <li>Aceitamos cartão de crédito e débito</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Política de cancelamento -->
-            <div class="row mt-5">
-                <div class="col-lg-8">
-                    <h2 class="section-title mb-3">Política de cancelamento</h2>
-                    <div class="section-divider mb-4"></div>
-                    <p>
-                        Imprevistos acontecem, nós entendemos. Mas, por gentileza, pedimos que avise com antecedência
-                        sempre que precisar cancelar ou reagendar o seu horário.
-                    </p>
-                    <p class="mb-0">
-                        Assim, conseguimos organizar nossa agenda e disponibilizar o horário para outros clientes que
-                        também desejam ser atendidos.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- Rodapé -->
-    <footer class="footer py-4 bg-black text-white-50 mt-auto">
-        <div class="container">
-            <div class="row align-items-center gy-3">
-                <div class="col-md-8">
-                    <small>&copy; 2025 235 Barbearia. Todos os direitos reservados.</small>
-                </div>
-                <div class="col-md-4 text-md-end">
-                    <a href="https://www.facebook.com/235.barbearia" target="_blank" class="text-white-50 me-3">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/235.barbearia" target="_blank" class="text-white-50">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
